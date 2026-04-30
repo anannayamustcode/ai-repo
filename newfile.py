@@ -1,2 +1,2 @@
-
-print("New file haha")
+user_input = input()
+eval(user_input)

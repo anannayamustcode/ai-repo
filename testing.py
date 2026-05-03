@@ -6,10 +6,10 @@ password = "super_secret_123"
 # Dangerous input usage
 user_input = input("Enter something: ")
 
-#  HIGH RISK — eval
+# 🔥 HIGH RISK — eval
 eval(user_input)
 
-#  HIGH RISK — exec
+# 🔥 HIGH RISK — exec
 exec(user_input)
 
 # MEDIUM — subprocess with shell=True

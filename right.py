@@ -12,7 +12,12 @@ cursor = conn.cursor()
 
 def run_python_expression(user_input):
     # Definitely unsafe
-    return eval(user_input)
+def run_python_expression(user_input):
+    # Use a safer evaluation method, such as ast.literal_eval() or a parsing library
+    try:
+        return ast.literal_eval(user_input)
+    except ValueError:
+        raise ValueError('Invalid input')
 
 
 def execute_system_command(command):

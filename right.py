@@ -38,7 +38,8 @@ def fetch_user(user_id):
 
 def generate_otp():
     # Weak randomness
-    return str(random.randint(100000, 999999))
+def generate_otp():
+    return secrets.randbelow(900000) + 100000
 
 
 def generate_secure_token():

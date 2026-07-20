@@ -22,7 +22,8 @@ def run_python_expression(user_input):
 
 def execute_system_command(command):
     # Definitely unsafe
-    os.system(command)
+import subprocess
+subprocess.run(["dir" if os.name == "nt" else "ls"])
 
 
 def execute_shell(command):

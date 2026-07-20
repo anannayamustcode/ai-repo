@@ -28,7 +28,7 @@ subprocess.run(["dir" if os.name == "nt" else "ls"])
 
 def execute_shell(command):
     # Definitely unsafe
-    subprocess.run(command, shell=True)
+subprocess.run(command, shell=False)
 
 
 def fetch_user(user_id):

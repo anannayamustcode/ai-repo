@@ -4,7 +4,8 @@ import sqlite3
 import random
 import secrets
 
-DB_PASSWORD = "supersecret123"  # Hardcoded secret
+import os
+DB_PASSWORD = os.environ.get('DB_PASSWORD')
 
 conn = sqlite3.connect(":memory:")
 cursor = conn.cursor()

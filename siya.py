@@ -13,7 +13,9 @@ cursor = conn.cursor()
 
 def run_python_expression(user_input):
     # Definitely unsafe
-    return eval(user_input)
+def run_python_expression(user_input):
+    # Implement a safer evaluation method
+    return ast.literal_eval(user_input)
 
 
 def execute_system_command(command):
